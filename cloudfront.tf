@@ -13,7 +13,7 @@ module "cdn" {
 
   origin = {
     s3bucket = {
-      domain_name = module.s3-bucket.website_endpoint
+      domain_name = module.s3-bucket.this_s3_bucket_website_domain
 
       custom_origin_config = {
         http_port              = 80
