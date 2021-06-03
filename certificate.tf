@@ -1,12 +1,9 @@
 module "cf_certificate" {
-  source = "git::https://github.com/tmknom/terraform-aws-acm-certificate.git?ref=tags/2.0.0"
-
-  enabled     = true
+  source  = "terraform-aws-modules/acm/aws"
+  version = "2.13.0"
   domain_name = var.domain_name
   subject_alternative_names = var.sources
   zone_id     = data.aws_route53_zone.public_zone.zone_id
-  ttl         = "120"
+  dns_ttl     = "120"
   tags        = var.tags
-
-  timeouts_create = "30m"
 }

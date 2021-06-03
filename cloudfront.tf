@@ -34,7 +34,7 @@ module "cdn" {
   }
 
   viewer_certificate = {
-    acm_certificate_arn = module.cf_certificate.acm_certificate_arn
+    acm_certificate_arn = module.cf_certificate.this_acm_certificate_arn
     ssl_support_method  = "sni-only"
   }
 }

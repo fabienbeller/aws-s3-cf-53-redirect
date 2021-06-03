@@ -24,3 +24,13 @@ variable "sources" {
   type        = list(string)
   default     = null
 }
+
+variable "redirect_host" {
+  description = "Host to redirect to."
+  type        = string
+}
+
+variable "redirect_prefix" {
+  description = "Prefix to redirect to. Eg: page/docs/"
+  type        = string
+}

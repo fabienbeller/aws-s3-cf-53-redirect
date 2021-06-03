@@ -7,10 +7,10 @@ module "s3-bucket" {
    error_document = "error.html"
    routing_rules = jsonencode([{
      Redirect : {
-           "HostName": "kettlebellsforafrica.co.za",
+           "HostName": var.redirect_host,
            "HttpRedirectCode": "301",
            "Protocol": "https",
-           "ReplaceKeyPrefixWith": "shop/kettlebells/60kg-kettlebell-pre-order-now-open/"
+           "ReplaceKeyPrefixWith": var.redirect_prefix
        }
    }])
  }
