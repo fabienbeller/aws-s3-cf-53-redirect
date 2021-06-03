@@ -1,7 +1,7 @@
 name = "testing"
 domain_name = "yoyoacademy.com"
 bucket_name = "redirect-test-com"
-sources = ["www.yoyoacademy.com"]
+sources = ["www.yoyoacademy.com", "yoyoacademy.com"]
 redirect_host = "kettlebellsforafrica.co.za"
 redirect_prefix = "test/testing/"
 tags = {
