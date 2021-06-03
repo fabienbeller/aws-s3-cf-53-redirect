@@ -19,11 +19,6 @@ variable "bucket_name" {
     type        = string
 }
 
-variable "redirect" {
-    description = "Map containing redirect config."
-    type        = map(string)	
-}
-
 variable "sources" {
   description = "Redirect source domains."
   type        = list(string)
