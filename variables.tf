@@ -1,6 +1,6 @@
 variable "domain_name" {
-    description = "The name of the site"
-    type        = string
+  description = "The name of the site"
+  type        = string
 }
 
 variable "tags" {
@@ -15,8 +15,8 @@ variable "name" {
 }
 
 variable "bucket_name" {
-    description = "The name of the bucket."
-    type        = string
+  description = "The name of the bucket."
+  type        = string
 }
 
 variable "sources" {
